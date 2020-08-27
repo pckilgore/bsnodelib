@@ -2,7 +2,7 @@
 
 ```console
 # Build and bundle
-$ cd bstest && yarn install && yarn build && yarn link
+$ cd bstest && yarn install && yarn build
 $ rm -rf node_modules # We aren't depending on these.
 
 # Install into node-only project 
