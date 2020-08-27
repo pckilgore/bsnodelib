@@ -1,0 +1,13 @@
+{
+  "name": "bstest",
+  "version": "0.1.0",
+  "sources": {
+    "dir": "src",
+    "subdirs": true
+  },
+  "package-specs": {
+    "module": "commonjs"
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": ["relude", "relude-parse"]
+}

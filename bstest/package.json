@@ -1,0 +1,23 @@
+{
+  "name": "bstest",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w"
+  },
+  "main": "lib/js/src/demo.bs.js",
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^7.2.2"
+  },
+  "dependencies": {
+    "relude": "^0.63.1",
+    "bs-bastet": "^1.2.5",
+    "relude-parse": "^0.8.0"
+  }
+}
