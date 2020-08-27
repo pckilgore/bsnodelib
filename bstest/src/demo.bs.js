@@ -3,7 +3,7 @@
 
 var Curry = require("bs-platform/lib/js/curry.js");
 var Belt_Result = require("bs-platform/lib/js/belt_Result.js");
-var ReludeParse_Parser = require("relude-parse/lib/js/src/ReludeParse_Parser.bs.js");
+var ReludeParse_Parser = require("relude-parse/src/ReludeParse_Parser.bs.js");
 
 var f = ReludeParse_Parser.runParser("1", Curry._2(ReludeParse_Parser.$less$star, ReludeParse_Parser.anyDigit, ReludeParse_Parser.eof));
 

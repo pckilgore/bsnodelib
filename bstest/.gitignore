@@ -1,4 +1,7 @@
 *.exe
+.cache
+dist
+bundle.js
 *.obj
 *.out
 *.compile

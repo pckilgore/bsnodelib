@@ -3,21 +3,26 @@
   "version": "0.1.0",
   "scripts": {
     "clean": "bsb -clean-world",
-    "build": "bsb -make-world",
+    "build:re": "bsb -make-world",
+    "build": "yarn build:re && yarn package",
+    "package": "yarn parcel build src/demo.bs.js --no-source-maps",
     "watch": "bsb -make-world -w"
   },
-  "main": "lib/js/src/demo.bs.js",
+  "main": "dist/demo.bs.js",
+  "files": [
+    "dist/bundle.js",
+    "src/"
+  ],
   "keywords": [
     "BuckleScript"
   ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "^7.2.2"
-  },
-  "dependencies": {
-    "relude": "^0.63.1",
+    "bs-platform": "^7.2.2",
+    "parcel-bundler": "^1.12.4",
     "bs-bastet": "^1.2.5",
+    "relude": "^0.63.1",
     "relude-parse": "^0.8.0"
   }
 }
